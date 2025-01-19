@@ -4,6 +4,7 @@ import './BuyTokens.css';
 const BuyTokens = () => {
     return (
         <div className="buy-token-container">
+            {/* Pricing Section */}
             <h1 className="text-3xl font-bold mb-4">Pricing</h1>
             <div className="card-grid">
                 <div className="pricing-card">
@@ -14,7 +15,7 @@ const BuyTokens = () => {
                     <p>Billed monthly</p>
                     <div className="benefits">
                         <p>✔ Access to all basic features</p>
-                        <p>✔ Per trade 10% profit boost</p>
+                        <p>✔ Per trade 3% profit boost</p>
                     </div>
                     <button className="card-button">Buy</button>
                 </div>
@@ -26,7 +27,7 @@ const BuyTokens = () => {
                     <p>Billed monthly</p>
                     <div className="benefits">
                         <p>✔ Advanced analytics dashboard</p>
-                        <p>✔ Per trade 12% profit boost</p>
+                        <p>✔ Per trade 6% profit boost</p>
                     </div>
                     <button className="card-button">Buy</button>
                 </div>
@@ -38,7 +39,7 @@ const BuyTokens = () => {
                     <p>Billed monthly</p>
                     <div className="benefits">
                         <p>✔ Dedicated support</p>
-                        <p>✔ Per trade 15% profit boost</p>
+                        <p>✔ Per trade 9% profit boost</p>
                     </div>
                     <button className="card-button">Buy</button>
                 </div>
@@ -50,9 +51,41 @@ const BuyTokens = () => {
                     <p>Billed monthly</p>
                     <div className="benefits">
                         <p>✔ Exclusive premium features</p>
-                        <p>✔ Per trade 20% profit boost</p>
+                        <p>✔ Per trade 12% profit boost</p>
                     </div>
                     <button className="card-button">Buy</button>
+                </div>
+            </div>
+
+            {/* Token Pools Section */}
+            <h2 className="buy-token-header pool-header">Available Token Pools</h2>
+            <div className="pool-grid">
+                <div className="pool-card">
+                    <h3 className="pool-title">Premium DAO Token</h3>
+                    <span className="status open">Open</span>
+                    <div className="pool-details">
+                        <p>Required Amount: <span className="highlight">$10,000</span></p>
+                        <p>Current Pool: <span className="highlight">$3,500</span></p>
+                        <p>Participants: <span className="highlight">2</span></p>
+                    </div>
+                    <div className="progress-bar">
+                        <div className="progress" style={{ width: '35%' }}></div>
+                    </div>
+                    <button className="pool-button">Join Pool</button>
+                </div>
+
+                <div className="pool-card">
+                    <h3 className="pool-title">Gold DAO Token</h3>
+                    <span className="status completed">Completed</span>
+                    <div className="pool-details">
+                        <p>Required Amount: <span className="highlight">$5,000</span></p>
+                        <p>Current Pool: <span className="highlight">$5,000</span></p>
+                        <p>Participants: <span className="highlight">2</span></p>
+                    </div>
+                    <div className="progress-bar">
+                        <div className="progress" style={{ width: '100%' }}></div>
+                    </div>
+                    <button className="pool-button disabled" disabled>Join Pool</button>
                 </div>
             </div>
         </div>

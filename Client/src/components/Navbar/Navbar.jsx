@@ -42,17 +42,14 @@ const Navbar = () => {
       <li>
         <Link to="/tron">Tron</Link>
       </li>
-      <li>
-        {/* <Link to="/login">Login</Link> */}
-      </li>
     </ul>
     <div className="button-container">
       <button className="Login" onClick={() => console.log("Login clicked!")}>
         Login
       </button>
-      <button className="connect-wallet" onClick={handleConnectWallet}>
+      {/* <button className="connect-wallet" onClick={handleConnectWallet}>
         Connect Wallet
-      </button>
+      </button> */}
     </div>
     <div className="navbar-toggle" onClick={toggleMenu}>
       <div></div>

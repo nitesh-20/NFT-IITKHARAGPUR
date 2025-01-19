@@ -17,11 +17,11 @@ const Menu = () => {
             className="text-section"
           >
             <h1 className="title">
-              Global #1 Trusted <br />
-              Wealth Research Platform
+              Global BlockCAi-Powered <br />
+              Finance Platform
             </h1>
             <p className="desc">
-              Generate proposals, create reports, and manage portfolios with ease. Our AI-powered platform ensures simplicity and delivers a 15% profit every month.
+              Generate proposals, create reports, and manage portfolios with ease. Our AI-powered decentralised platform ensures security simplicity and delivers a 15% profit every month.
             </p>
             <div className="money-pa">
               <button className="money-btn">Your Ultimate Money Making</button>

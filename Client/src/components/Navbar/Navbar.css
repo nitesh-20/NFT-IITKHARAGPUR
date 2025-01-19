@@ -1,3 +1,11 @@
+/* Resetting default body and html margin/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Flexbox to center content */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,6 +16,19 @@
   font-family: Arial, sans-serif;
   flex-wrap: wrap;
   position: relative;
+  width: 100%; /* Ensure navbar takes full width */
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+/* Main content container should also take full width */
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box; /* Prevents unwanted overflow */
 }
 
 .navbar-brand {
@@ -51,10 +72,9 @@
   color: white;
 }
 
-/* Flex container for the buttons */
 .button-container {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 10px;
   position: relative;
 }
 
@@ -66,7 +86,6 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: auto; /* Adjust width based on content */
 }
 
 .Login:hover {
@@ -128,19 +147,18 @@
     margin: 5px;
   }
 
-  /* Stacking buttons vertically on mobile */
   .button-container {
     width: 100%;
     flex-direction: column;
     gap: 5px;
     margin-top: 10px;
-    position: static; /* Adjust for mobile view */
+    position: static;
     margin-left: 10px;
   }
 
   .Login,
   .connect-wallet {
-    width: auto; /* Adjust width based on content */
+    width: 100%; /* Making buttons take full width on small screens */
     text-align: center;
   }
 }
