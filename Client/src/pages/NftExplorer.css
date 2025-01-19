@@ -1,19 +1,81 @@
-/* client/src/styles/NftExplorer.css */
-.nft-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .nft-card {
-    width: 200px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .nft-card img {
-    width: 100%;
-    height: auto;
-  }
-  
+/* Main container for the explorer */
+.nft-explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f8f8; /* Optional: Background color for the entire explorer */
+}
+
+/* Grid container for the cards */
+.nft-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* Individual NFT card */
+.nft-card {
+  width: 10rem;
+  height: 16rem; /* Adjusted to accommodate price and profit text */
+  background-color: var(--card-bg, #f0f0f0); /* Background color */
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+  transform: scale(1.05);
+}
+
+/* NFT image styling */
+.nft-image {
+  width: 100%;
+  height: 70%; /* Adjusted to fit the card */
+  object-fit: cover;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* NFT name styling */
+.nft-name {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  color: var(--text-color, #555); /* Text color */
+  text-align: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem; /* Margin to separate from price/profit */
+}
+
+/* NFT price styling */
+.nft-price {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 600;
+  color: var(--price-color, #333); /* Price text color */
+  text-align: center;
+  margin-bottom: 0.5rem; /* Space before profit */
+}
+
+/* NFT profit styling */
+.nft-profit {
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  color: green; /* Green color for profit */
+  text-align: center;
+  font-weight: bold; /* Make profit text stand out */
+}
+
+/* Address text styling */
+.nft-address {
+  margin-top: 2rem;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  color: var(--primary-color, #333); /* Primary text color */
+}
