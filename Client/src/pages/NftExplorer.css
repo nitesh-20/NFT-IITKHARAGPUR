@@ -1,0 +1,19 @@
+/* client/src/styles/NftExplorer.css */
+.nft-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .nft-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .nft-card img {
+    width: 100%;
+    height: auto;
+  }
+  

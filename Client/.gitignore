@@ -1,0 +1,16 @@
+# Node.js
+/client/node_modules/
+client/build/
+
+# Environment variables
+/client/.env
+
+# IDE files
+client/.vscode/
+client/.idea/
+
+# OS generated files
+client/.DS_Store
+
+# NPM Cache
+client/.npm/

@@ -1,0 +1,86 @@
+/* Container for the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;  /* Slightly lighter background */
+}
+
+/* Login form styling */
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  width: 100%;
+  max-width: 450px;  /* Slightly wider form */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.login-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Hover effect for more depth */
+}
+
+/* Form header */
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;  /* Increased space */
+  font-family: 'Arial', sans-serif;
+  font-weight: 700; /* Stronger heading */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: 600; /* Bold error text */
+}
+
+/* Connected address styling */
+.login-form p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Submit button */
+.tron-login-btn {
+  width: 80%;  /* Adjusted to fit better */
+  padding: 14px;  /* More padding for a better button */
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;  /* Make button block-level */
+  margin: 20px auto 0;  /* Center the button and add margin */
+}
+
+.tron-login-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight hover effect for button */
+}
+
+/* Sign-up link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;  /* Increased space for separation */
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600; /* Slightly bolded link */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue on hover */
+}
